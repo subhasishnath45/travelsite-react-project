@@ -1,15 +1,20 @@
 import Hero from '../components/Hero';
-// import Navbar from '../components/Navbar';
-// import SearchBar from '../components/SearchBar';
-
+import Navbar from '../components/Navbar';
+import SearchBar from '../components/SearchBar';
+import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
+import Map from '../components/Map';
+import Footer from '../components/Footer';
 const Home = () => {
-  console.log("Rendering Home page");
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
-      {/* <SearchBar /> */}
-      {/* Add other sections like Services, Testimonials, Map, Footer etc */}
+      <SearchBar />
+      <Services />
+      <Testimonials />
+      <Map />
+      <Footer />
     </div>
   );
 };

@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-opensans: "Open Sans", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --color-yellow: #EDAE49;
+  --color-red: #D1495B;
+  --color-green: #00798C;
+  --color-sky: #30638E;
+  --color-blue: #003D5B;
+}
+
+@layer utilities {
+  @keyframes ripple {
+    from {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  .animate-ripple {
+    animation: ripple 0.6s ease-out forwards;
+  }
+}
+
+body {
+    font-family: var(--font-raleway);
+}
